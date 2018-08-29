@@ -1,1 +1,0 @@
-nasm -f elf64 hello-world.asm && ld -m elf_x86_64 -s -o output hello-world.o && ./output

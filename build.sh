@@ -1,0 +1,1 @@
+nasm -f elf64 hello-world.asm && ld -m elf_x86_64 -s -o hello_world_x64 hello-world.o && rm hello-world.o && ./hello_world_x64
