@@ -9,10 +9,10 @@ SECTION .text
 
 		_start:
 
-			mov rax, 1
-			mov rdi, 1
 			mov rsi, msg
 			mov rdx, msg_l
+			mov rax, 1
+			mov rdi, 1
 			syscall
 
 			mov rax, 60
