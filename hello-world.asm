@@ -1,7 +1,6 @@
 SECTION .data
 
-	new_l:  equ 0b1010
-	msg:    db "Yo-", "Hello world!", new_l
+	msg:    db "Yo-", "Hello world!", 0b1010
 	msg_l:	equ $-msg
 
 SECTION .text
