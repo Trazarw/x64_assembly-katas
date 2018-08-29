@@ -9,12 +9,14 @@ SECTION .text
 
 		_start:
 
-			mov rsi, msg
-			mov rdx, msg_l
-			mov rax, 1
-			mov rdi, 1
+	;Write Message
+			mov rax, 1 
+				mov rsi, msg
+				mov rdx, msg_l
+				mov rdi, 1
 			syscall
-
+	
+	;Exit Program
 			mov rax, 60
-			mov rdi, 0
+				mov rdi, 0
 			syscall
