@@ -8,13 +8,15 @@ SECTION .text
 	global _start
 
 		_start:
-		
-			mov rax, 1 ;Write Message
+
+			;Write Messasge
+			mov rax, 1 
+			mov rdi, 1
 			mov rsi, msg
 			mov rdx, msg_l
-			mov rdi, 1
 			syscall
-		
-			mov rax, 60	;Exit Program
+			
+			;Exit
+			mov rax, 60	
 			mov rdi, 0
 			syscall
