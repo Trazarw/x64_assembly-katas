@@ -5,7 +5,7 @@ SECTION .data
 
 SECTION .bss
 
-    date: dd ""
+    date: dd ""   
 
 SECTION .text
 
